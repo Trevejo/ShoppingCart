@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+            crossorigin="anonymous"></script>
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    Nome do item: <input type="text" id="nomeItemId">
+    Quantidade: <input type="number" id="quantidadeId">
+    Preço: <input type="number" id="precoId">
+
+    <button onclick="adicionaItem()">Adicionar item ao carrinho</button>
+    <table id="tabelaItensId">
+        <tr>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+        </tr>
+
+    </table>
+
+    Quantas pessoas vão pagar? <input type="number" id="pessoasId">
+    <br>
+    <button onclick="fechaCompra()">Fechar Compra</button>
+    <label id="fechamentoDeCompraId"></label>
+    <script src="script.js"></script>
+</body>
+</html>
